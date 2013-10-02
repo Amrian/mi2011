@@ -1,0 +1,23 @@
+<h1> Form Saya </h1>
+<?php
+echo CHtml::beginform();
+echo 'JUMLAH : '.CHtml::textField('NAMA');
+echo '<br />';
+echo 'MAKANAN :<br /> '.Chtml::checkBoxList('MENU', '',array(
+	'1' => 'mie ayam',
+	'2' => 'bakso',
+	'3' => 'sate',
+	));
+	echo '<br />';
+	echo 'MINUMAM :<br /> '.Chtml::dropDownList('MENU', '',array(
+	'1' => 'Es degan',
+	'2' => 'Es Campur',
+	'3' => 'Es batu',
+	));
+	echo '<br />';
+	echo 'KETERANGAN : <br />';
+	echo CHtml::textArea('KETERANGAN', '', array('cols'=>30, 'rows'=>5));
+	echo '<br />';
+	echo CHtml::submitButton('KIRIM');
+	echo CHtml::endform();
+	?>
